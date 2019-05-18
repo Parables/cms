@@ -122,12 +122,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database\CMSDBDataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CMSDBDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Copies\CodeFile1.vb" />
     <Compile Include="Forms\Contributions.Designer.vb">
       <DependentUpon>Contributions.vb</DependentUpon>
     </Compile>
@@ -152,7 +146,7 @@
     <Compile Include="Forms\Login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MainModule.vb" />
+    <Compile Include="Modules\MainModule.vb" />
     <Compile Include="Forms\MainWin.Designer.vb">
       <DependentUpon>MainWin.vb</DependentUpon>
     </Compile>
@@ -165,10 +159,10 @@
     <Compile Include="Forms\Members.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\UserControl1.Designer.vb">
+    <Compile Include="UserControls\UserControl1.Designer.vb">
       <DependentUpon>UserControl1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UserControl1.vb">
+    <Compile Include="UserControls\UserControl1.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="RecyclerView\Adapter.vb" />
@@ -208,7 +202,7 @@
     <EmbeddedResource Include="Forms\Members.resx">
       <DependentUpon>Members.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UserControl1.resx">
+    <EmbeddedResource Include="UserControls\UserControl1.resx">
       <DependentUpon>UserControl1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -219,17 +213,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Database\CMSDBDataSet.xsc">
-      <DependentUpon>CMSDBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Database\CMSDBDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CMSDBDataSet.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Database\CMSDBDataSet.xss">
-      <DependentUpon>CMSDBDataSet.xsd</DependentUpon>
-    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -261,14 +244,6 @@
     <None Include="Resources\Add User.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database\CMSDB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Database\CMSDB_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>CMSDB.mdf</DependentUpon>
-    </Content>
-    <Content Include="Database\Sample Queries.sql" />
     <None Include="Resources\user_big.png" />
     <None Include="Resources\user_small.png" />
   </ItemGroup>
